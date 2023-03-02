@@ -10,15 +10,19 @@
 <body>
     <nav>
         <button class="nav-boton" onclick="accion()">Menú</button>
-        <a href="#" class="nav-enlace"> inicio. </a>
-        <a href="#" class="nav-enlace"> Nosotros. </a>
-        <a href="#" class="nav-enlace"> Servicios. </a>
-        <a href="#" class="nav-enlace"> Contactanos! </a>
+        <a href="#" class="nav-enlace desaparece" > inicio. </a>
+        <a href="#" class="nav-enlace desaparece"> Nosotros. </a>
+        <a href="#" class="nav-enlace desaparece"> Servicios. </a>
+        <a href="#" class="nav-enlace desaparece"> Contactanos! </a>
     </nav>
 
     <script>
         function accion(){
-            console.log('FUncionando...')
+            console.log('Funcionando...')
+            var ancla = document.getElementsByClassName('nav-enlace'); 
+            for(var i = 0; i < enlace.lenght; i++){
+                enlace[i].classList.toggle('desaparece')
+            }
         }
     </script>
 
