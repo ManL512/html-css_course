@@ -1,10 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+} 
 .contenedor{
     width: 80%;
     height: 500px;
@@ -13,8 +14,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    /* align-content: center; */
 }
+/*contenedor hijo*/
 .hijo{
     background-color: #00b285;
     width: 200px;
@@ -22,6 +24,19 @@
     color: #FFF;
     margin: 30px;
     padding: 20px;
-    font-size: 40px;
-    text-align: center;
+    font-size: 40px; /*tamaño de la letra*/
+    text-align: center; 
+    flex-shrink: 1 1 auto; /* aqui se resume flex grow y shrink, siendo flex grow 1, flex shrink 1  y automatico*/
 }
+.hijo_D{
+    background-color: #00b285;
+    width: 200px;
+    height: 100px;
+    color: #FFF;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px; /*tamaño de la letra*/
+    align-self: stretch; /*direccionamiento*/
+    height: auto; /**/
+}
+
